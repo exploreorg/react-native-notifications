@@ -4,19 +4,18 @@ Handle all the aspects of push notifications for your app, including remote and 
 
 **All the native iOS notifications features are supported!**
 
->For information regarding proper integration with [react-native-navigation](https://github.com/wix/react-native-navigation), follow [this wiki](https://github.com/wix/react-native-notifications/wiki/Android:-working-with-RNN).
+_For information regarding proper integration with [react-native-navigation](https://github.com/wix/react-native-navigation), follow [this wiki](https://github.com/wix/react-native-notifications/wiki/Android:-working-with-RNN)._
 
-## Supported Features
+
 ### iOS
 
-- [Remote notifications](#handling-received-notifications).
-- [Local notifications](#triggering-local-notifications).
-- [Background notifications](#managed-notifications-ios-only).
-- [Managed notifications](#managed-notifications-ios-only) (notifications that can be cleared from the server, like Facebook messenger and Whatsapp web).
-- [PushKit API](#pushkit-api-ios-only) for VoIP and other background messages.
-- [Interactive notifications](#interactive--actionable-notifications-ios-only) that allows you to provide additional functionality to your users outside of your application.
+<img src="https://s3.amazonaws.com/nrjio/interactive.gif" alt="Interactive notifications example" width=350/>
 
-![Interactive notifications example](https://s3.amazonaws.com/nrjio/interactive.gif)
+- Remote (push) notifications
+- Local notifications
+- Background/Managed notifications (notifications that can be cleared from the server, like Facebook messenger and Whatsapp web)
+- PushKit API (for VoIP and other background messages)
+- Interactive notifications (allows you to provide additional functionality to your users outside of your application such as action buttons)
 
 ### Android
 
@@ -26,6 +25,15 @@ Handle all the aspects of push notifications for your app, including remote and 
 - Android equivalent of React-Native's implementation of [`PushNotificationsIOS.getInitialNotification()`](https://facebook.github.io/react-native/docs/pushnotificationios.html#getinitialnotification).
 
 _Upcoming: local notifications, background-state Rx queue (iOS equivalent)_
+
+# Table of Content
+
+- [Installation and setup](./docs/installation.md) - Setting up the library in your app
+- [Subscription](./docs/subscription.md) - Signing in to push notifications vendors (e.g. GCM)
+- [Notification Events (notfications core)](./docs/notificationsEvents.md) - Handling push notification arrival, notification opening by users
+- [Local notifications](./docs/localNotifications.md) - Manually triggering notifications (i.e. not via push)
+- [Advanced iOS topics](./docs/advancedIos.md) - e.g. managed notifications, PushKit API, Notifications actions
+- [Notifications layout control - Android (wiki page)](https://github.com/wix/react-native-notifications/wiki/Android:-Layout-Customization) - Learn how to fully customize your notifications layout on Android!
 
 ## Installation
 
